@@ -23,7 +23,7 @@ namespace Replace
             {
                 if(text[i] == a)
                 {
-                    sb.Append(a);
+                    sb.Append(b);
                 }
                 else
                 {

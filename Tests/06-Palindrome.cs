@@ -24,7 +24,6 @@ namespace Tests
                 return false;
             string halfA = text.Substring(0, text.Length / 2);
             string halfB = text.Substring(text.Length / 2, text.Length / 2);
-            halfB = new string (halfB.Reverse().ToArray());
             return halfA == halfB;
         }
     }

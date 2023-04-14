@@ -27,7 +27,7 @@ namespace Tests
             float result = 0;
             float resultOK = A - B;
             //Act
-            result = Calculator.Program.Sum(A, A);
+            result = Calculator.Program.Substract(A, B);
             //Assert
             Assert.AreEqual(resultOK, result);
         }
@@ -64,7 +64,7 @@ namespace Tests
             float A = (float)Utils.random.NextDouble();
             float B = (float)Utils.random.NextDouble();
             float result = 0;
-            float resultOK = B % A;
+            float resultOK = A % B;
             //Act
             result = Calculator.Program.Mod(A, B);
             //Assert
