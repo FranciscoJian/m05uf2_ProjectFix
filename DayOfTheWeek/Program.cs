@@ -28,8 +28,11 @@ namespace DayOfTheWeek
         }
         public static int DayOfTheWeek(int year, int month, int day)
         {
+            DateTime fecha = new DateTime(year, month, day);
+            int diaSemana = Convert.ToInt32(fecha.DayOfWeek);
+
             //TODO
-            return -1;
+            return diaSemana;
         }
     }
 }

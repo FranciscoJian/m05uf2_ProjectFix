@@ -11,7 +11,7 @@ namespace Tests
         public void IsPrime_Test()
         {
             //Arrange
-            int original = Utils.random.Next();
+            int original = 702770287;
             bool result = false;
             bool resultOK = Utils.IsPrimeOK(original);
             //Act

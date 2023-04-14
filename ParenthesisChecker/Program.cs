@@ -24,7 +24,7 @@ namespace ParenthesisChecker
             int amount = 0;
             for (int i = 0; i < text.Length; i++)
             {
-                if(text[i] != search)
+                if(text[i] == search)
                     amount++;
             }
             return amount;

@@ -6,11 +6,11 @@ namespace Primes
     {
         static void Main(string[] args)
         {
-            float num;
+            double num;
             string response;
             Console.WriteLine("Enter a number: ");
             response = Console.ReadLine();
-            num = int.Parse(response);
+            num = double.Parse(response);
             if (IsPrime(num))
             {
                 Console.WriteLine(num + ": is prime");
@@ -20,7 +20,7 @@ namespace Primes
                 Console.WriteLine(num + ": is not prime");
             }
         }
-        public static bool IsPrime(float number)
+        public static bool IsPrime(double number)
         {
             if(number <= 1)
                 return false;
@@ -29,8 +29,16 @@ namespace Primes
             if (number % 2 == 0)
                 return false;
 
+            for (int i = 3; i < number; i += 2)
+            {
+                if (number % i == 0)
+                {
+                    return false;
+                }
+            }
+
             //TODO
-            return false;
+            return true;
         }
     }
 }
